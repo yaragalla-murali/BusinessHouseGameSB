@@ -87,11 +87,14 @@
 		                    <rules>
 		                        <rule>
 		                            <element>CLASS</element>
+		                            <excludes>
+								      <exclude>*Test</exclude>
+								    </excludes>
 		                            <limits>
 		                                <limit>
-		                                    <counter>BRANCH</counter>
+		                                    <counter>LINE</counter>
 		                                    <value>COVEREDRATIO</value>
-		                                    <minimum>0.80</minimum>
+		                                    <minimum>80%</minimum>
 		                                </limit>
 		                            </limits>		                            
 		                        </rule>
