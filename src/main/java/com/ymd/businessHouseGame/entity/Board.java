@@ -42,8 +42,9 @@ public class Board {
         }
     }
 
-    public Integer getMaxCellsInGrid() {
-        return grid.size();
-    }
+    
+	public List<Cell> getGrid() {
+		return grid;
+	}
 
 }

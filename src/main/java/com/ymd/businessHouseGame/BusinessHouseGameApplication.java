@@ -43,7 +43,7 @@ public class BusinessHouseGameApplication implements CommandLineRunner{
             out.println("Current set : " + (set + 1));
             players.forEach(player -> {
                 Integer numberOfstepsToMove = dice.giveDiceOutput();
-                player.move(numberOfstepsToMove, board.getMaxCellsInGrid());
+                player.move(numberOfstepsToMove, board.getGrid().size());
                 board.handlePlayerMove(player);
                 out.println(player.getName() + " is at position "
                         + player.getCurrPositionOnBoard()
